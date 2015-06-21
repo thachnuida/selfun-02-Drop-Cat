@@ -1,0 +1,27 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  background-color: #47004F;
+  height: 100%;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+  overflow: hidden;
+}
+
+h1 {
+  color: #E4DFDF;
+  text-align: center;
+}
+
+p {
+  bottom: 0;
+  color: #E4DFDF;
+  position: absolute;
+  right: 0;
+}
+
+.cat {
+  position: absolute;
+}

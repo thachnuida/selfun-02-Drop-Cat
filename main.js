@@ -9,6 +9,7 @@ var Cat = function(left, top) {
   this.top = top;
 
   this.time = 0;
+  this.v0 = -30;
 
   // Create html element, add to body
   this.elem = document.createElement('img');
@@ -23,7 +24,7 @@ Cat.prototype.fall = function() {
   var self = this;
   self.timer = setInterval(function() {
     self.time += DELTAL_TIME;
-    var s = 1/2 * ACCELERATION * self.time * self.time + self.time;
+    var s = 1/2 * ACCELERATION * self.time * self.time + self.v0 * self.time;
     self.elem.style.top = (self.top + s) + 'px';
 
     // Remove element if fall out of screen
